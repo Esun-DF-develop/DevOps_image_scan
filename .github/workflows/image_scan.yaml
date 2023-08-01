@@ -36,10 +36,7 @@ jobs:
         run: |
           git config --global user.email "Workflow@github.com"
           git config --global user.name "Auto-Workflow"
-          git remote -v
-          git pull
           git checkout -b security/${{ env.image_name }}/${{ env.image_tag }}
-          git status
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
-          git push origin security/${{ env.image_name }}/${{ env.image_tag }}
+          git push --set-upstream ${{ env.URL }} security/${{ env.image_name }}/${{ env.image_tag }}
