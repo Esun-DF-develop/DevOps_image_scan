@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       image: ${{ github.event.inputs.image }}
-      GH_TOKEN: ${{ secrets.ACTION_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v3
       - name: Set the value
