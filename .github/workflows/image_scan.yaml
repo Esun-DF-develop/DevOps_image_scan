@@ -42,4 +42,4 @@ jobs:
           git status
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
-          git push -u ${{ env.URL }} origin security/${{ env.image_name }}/${{ env.image_tag }}
+          git push --set-upstream ${{ env.URL }} origin security/${{ env.image_name }}/${{ env.image_tag }}
