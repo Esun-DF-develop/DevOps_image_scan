@@ -39,3 +39,20 @@ jobs:
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
           git push origin security/${{ env.image_name }}/${{ env.image_tag }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.ACTION_TOKEN }}
+          commit-message: Add ${{ github.event.inputs.image }} security report
+          committer: Auto-Workflow <Workflow@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: security/${{ env.image_name }}/${{ env.image_tag }}
+          delete-branch: false
+          title: 'Add ${{ github.event.inputs.image }} security report'
+          body: |
+            Add ${{ github.event.inputs.image }} security report
+            - see file `${{ env.image_name }}/${{ env.image_tag }}_report`
+          labels: |
+            ${{ env.image_name }}
