@@ -20,7 +20,7 @@ jobs:
       - name: Set the value
         run: |
           echo "image_name=$(echo ${{ env.image }} | cut -d ":" -f 1 )" >> $GITHUB_ENV
-          echo "image_tag=$(echo ${{ env.image_name }} | cut -d ":" -f 2 )" >> $GITHUB_ENV
+          echo "image_tag=$(echo ${{ env.image }} | cut -d ":" -f 2 )" >> $GITHUB_ENV
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
