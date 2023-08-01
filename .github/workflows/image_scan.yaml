@@ -46,7 +46,7 @@ jobs:
           commit-message: Cloud - Update available list
           title: Cloud - Update available list
           body: Cloud - Update available list
-          base: main
+          base: workflow
           labels: automated-pr, Clouds & Regions
-          branch: workflow
-          delete-branch: true
+          branch: main
+          delete-branch: false
