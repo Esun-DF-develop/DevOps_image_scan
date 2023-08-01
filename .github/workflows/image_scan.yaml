@@ -30,13 +30,10 @@ jobs:
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH,MEDIUM,LOW'
           output: '${{ env.image_name }}/${{ env.image_tag }}_report'
-          
-      - name: Run the Action
-        uses: devops-infra/action-commit-push@master
-        with:
-          github_token: "${{ secrets.ACTION_TOKEN }}"
-          add_timestamp: false
-          commit_prefix: "[Workflow]"
-          commit_message: "Add ${{ github.event.inputs.image }} security report"
-          force: false
-          target_branch: security/${{ env.image_name }}/${{ env.image_tag }}
+    
+      - name: Push to security/${{ env.image_name }}/${{ env.image_tag }}
+        run: |
+          git checkout -b security/${{ env.image_name }}/${{ env.image_tag }}
+          git add ${{ env.image_name }}/${{ env.image_tag }}_report
+          git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
+          git push security/${{ env.image_name }}/${{ env.image_tag }}
