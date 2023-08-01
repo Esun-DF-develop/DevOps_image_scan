@@ -41,19 +41,12 @@ jobs:
           git push origin security/${{ env.image_name }}/${{ env.image_tag }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
+        uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ secrets.ACTION_TOKEN }}
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: true
-          branch: workflow
-          base: security/${{ env.image_name }}/${{ env.image_tag }}
-          delete-branch: false
-          title: 'Add ${{ github.event.inputs.image }} security report'
-          body: |
-            Add ${{ github.event.inputs.image }} security report
-            - see file `${{ env.image_name }}/${{ env.image_tag }}_report`
-          labels: |
-            ${{ env.image_name }}
-          reviewers: dannymonkey
-          draft: true
+          commit-message: Cloud - Update available list
+          title: Cloud - Update available list
+          body: Cloud - Update available list
+          base: main
+          labels: automated-pr, Clouds & Regions
+          branch: cloud-update-advanced-params
+          delete-branch: true
