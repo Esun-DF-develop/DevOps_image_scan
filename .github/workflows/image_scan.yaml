@@ -48,7 +48,8 @@ jobs:
           committer: Auto-Workflow <Workflow@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: main
+          branch: workflow
+          base: security/${{ env.image_name }}/${{ env.image_tag }}
           delete-branch: false
           title: 'Add ${{ github.event.inputs.image }} security report'
           body: |
