@@ -57,3 +57,5 @@ jobs:
             - see file `${{ env.image_name }}/${{ env.image_tag }}_report`
           labels: |
             ${{ env.image_name }}
+          reviewers: dannymonkey
+          draft: false
