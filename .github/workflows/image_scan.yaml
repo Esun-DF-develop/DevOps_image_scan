@@ -47,7 +47,7 @@ jobs:
           commit-message: Add ${{ github.event.inputs.image }} security report
           committer: Auto-Workflow <Workflow@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          signoff: false
+          signoff: true
           branch: workflow
           base: security/${{ env.image_name }}/${{ env.image_tag }}
           delete-branch: false
@@ -58,4 +58,4 @@ jobs:
           labels: |
             ${{ env.image_name }}
           reviewers: dannymonkey
-          draft: false
+          draft: true
