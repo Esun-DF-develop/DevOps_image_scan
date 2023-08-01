@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       image: ${{ github.event.inputs.image }}
+      URL: https://${{ secrets.ACTION_TOKEN }}@github.com/Esun-DF-develop/DevOps_image_scan.git
     steps:
       - uses: actions/checkout@v3
       - name: Set the value
@@ -38,4 +39,4 @@ jobs:
           git checkout -b security/${{ env.image_name }}/${{ env.image_tag }}
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
-          git push origin security/${{ env.image_name }}/${{ env.image_tag }}
+          git push ${{ env.URL }} origin security/${{ env.image_name }}/${{ env.image_tag }}
