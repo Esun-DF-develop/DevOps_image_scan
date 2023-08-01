@@ -39,6 +39,7 @@ jobs:
           git remote -v
           git pull
           git checkout -b security/${{ env.image_name }}/${{ env.image_tag }}
+          git status
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
           git push ${{ env.URL }} origin security/${{ env.image_name }}/${{ env.image_tag }}
