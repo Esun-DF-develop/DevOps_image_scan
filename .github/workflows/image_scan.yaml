@@ -41,11 +41,9 @@ jobs:
           git push origin security/${{ env.image_name }}/${{ env.image_tag }}
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@@v5.0.2
         with:
           token: ${{ secrets.ACTION_TOKEN }}
-          commit-message: Add ${{ github.event.inputs.image }} security report
-          committer: Auto-Workflow <Workflow@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: true
           branch: workflow
