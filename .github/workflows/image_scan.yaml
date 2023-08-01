@@ -1,8 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Image Scan
-
-# Controls when the workflow will run
 on:
   workflow_dispatch:
     inputs:
@@ -14,18 +10,17 @@ on:
     types:
       - webhook
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      image: ${{ github.event.inputs.image }}
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      - name: Set the value
+        run: |
+          echo "image_name=$(echo ${{ env.image }} | cut -d ":" -f 1 )" >> $GITHUB_ENV
+          echo "image_tag=$(echo ${{ env.image_name }} | cut -d ":" -f 2 )" >> $GITHUB_ENV
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
@@ -33,3 +28,14 @@ jobs:
           format: 'table'
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH,MEDIUM,LOW'
+          output: '${{ env.image_name }}/${{ env.image_tag }}_report'
+          
+      - name: Run the Action
+        uses: devops-infra/action-commit-push@master
+        with:
+          github_token: "${{ secrets.ACTION_TOKEN }}"
+          add_timestamp: false
+          commit_prefix: "[Workflow]"
+          commit_message: "Add ${{ github.event.inputs.image }} security report"
+          force: false
+          target_branch: security/${{ github.event.inputs.image }}
