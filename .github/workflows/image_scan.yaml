@@ -39,4 +39,4 @@ jobs:
           commit_prefix: "[Workflow]"
           commit_message: "Add ${{ github.event.inputs.image }} security report"
           force: false
-          target_branch: security/${{ github.event.inputs.image }}
+          target_branch: security/${{ env.image_name }}/${{ env.image_tag }}
