@@ -39,7 +39,7 @@ jobs:
           git checkout -b security/${{ env.image_name }}/${{ env.image_tag }}
           git add ${{ env.image_name }}/${{ env.image_tag }}_report
           git commit -m '[Workflow] Add ${{ github.event.inputs.image }} security report'
-          git push origin security/${{ env.image_name }}/${{ env.image_tag }}
+          git push -f origin security/${{ env.image_name }}/${{ env.image_tag }}
 
       - name: Create Pull Request
         run: |
