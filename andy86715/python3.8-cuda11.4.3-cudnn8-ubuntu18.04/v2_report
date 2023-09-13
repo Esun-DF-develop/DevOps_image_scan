@@ -1,0 +1,733 @@
+
+andy86715/python3.8-cuda11.4.3-cudnn8-ubuntu18.04:v2 (ubuntu 18.04)
+===================================================================
+Total: 203 (LOW: 64, MEDIUM: 139, HIGH: 0, CRITICAL: 0)
+
+┌───────────────────────────┬────────────────┬──────────┬────────┬──────────────────────────┬──────────────────────────┬──────────────────────────────────────────────────────────────┐
+│          Library          │ Vulnerability  │ Severity │ Status │    Installed Version     │      Fixed Version       │                            Title                             │
+├───────────────────────────┼────────────────┼──────────┼────────┼──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ bash                      │ CVE-2019-18276 │ LOW      │ fixed  │ 4.4.18-2ubuntu1.2        │ 4.4.18-2ubuntu1.3        │ bash: when effective UID is not equal to its real UID the... │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-18276                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils                  │ CVE-2022-38533 │ MEDIUM   │        │ 2.30-21ubuntu1~18.04.7   │ 2.30-21ubuntu1~18.04.8   │ heap-based buffer overflow in bfd_getl32() when called by    │
+│                           │                │          │        │                          │                          │ strip_main() in objcopy.c via...                             │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-38533                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47673 │          │        │                          │ 2.30-21ubuntu1~18.04.9   │ out-of-bounds read in parse_module() in bfd/vms-alpha.c via  │
+│                           │                │          │        │                          │                          │ addr2line                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47673                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47696 │          │        │                          │                          │ segmentation fault in compare_symbols() in objdump.c         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47696                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25584 │          │        │                          │                          │ Out of bounds read in parse_module function in               │
+│                           │                │          │        │                          │                          │ bfd/vms-alpha.c                                              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25584                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25585 │          │        │                          │                          │ Field `file_table` of `struct module *module` is             │
+│                           │                │          │        │                          │                          │ uninitialized                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25585                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25588 │          │        │                          │                          │ Field `the_bfd` of `asymbol` is uninitialized in function    │
+│                           │                │          │        │                          │                          │ `bfd_mach_o_get_synthetic_symtab`                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25588                   │
+├───────────────────────────┼────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils-common           │ CVE-2022-38533 │          │        │                          │ 2.30-21ubuntu1~18.04.8   │ heap-based buffer overflow in bfd_getl32() when called by    │
+│                           │                │          │        │                          │                          │ strip_main() in objcopy.c via...                             │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-38533                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47673 │          │        │                          │ 2.30-21ubuntu1~18.04.9   │ out-of-bounds read in parse_module() in bfd/vms-alpha.c via  │
+│                           │                │          │        │                          │                          │ addr2line                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47673                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47696 │          │        │                          │                          │ segmentation fault in compare_symbols() in objdump.c         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47696                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25584 │          │        │                          │                          │ Out of bounds read in parse_module function in               │
+│                           │                │          │        │                          │                          │ bfd/vms-alpha.c                                              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25584                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25585 │          │        │                          │                          │ Field `file_table` of `struct module *module` is             │
+│                           │                │          │        │                          │                          │ uninitialized                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25585                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25588 │          │        │                          │                          │ Field `the_bfd` of `asymbol` is uninitialized in function    │
+│                           │                │          │        │                          │                          │ `bfd_mach_o_get_synthetic_symtab`                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25588                   │
+├───────────────────────────┼────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ binutils-x86-64-linux-gnu │ CVE-2022-38533 │          │        │                          │ 2.30-21ubuntu1~18.04.8   │ heap-based buffer overflow in bfd_getl32() when called by    │
+│                           │                │          │        │                          │                          │ strip_main() in objcopy.c via...                             │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-38533                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47673 │          │        │                          │ 2.30-21ubuntu1~18.04.9   │ out-of-bounds read in parse_module() in bfd/vms-alpha.c via  │
+│                           │                │          │        │                          │                          │ addr2line                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47673                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47696 │          │        │                          │                          │ segmentation fault in compare_symbols() in objdump.c         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47696                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25584 │          │        │                          │                          │ Out of bounds read in parse_module function in               │
+│                           │                │          │        │                          │                          │ bfd/vms-alpha.c                                              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25584                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25585 │          │        │                          │                          │ Field `file_table` of `struct module *module` is             │
+│                           │                │          │        │                          │                          │ uninitialized                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25585                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25588 │          │        │                          │                          │ Field `the_bfd` of `asymbol` is uninitialized in function    │
+│                           │                │          │        │                          │                          │ `bfd_mach_o_get_synthetic_symtab`                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25588                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ca-certificates           │ CVE-2022-23491 │          │        │ 20210119~18.04.2         │ 20211016ubuntu0.18.04.1  │ untrusted root certificates                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-23491                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ dirmngr                   │ CVE-2022-34903 │          │        │ 2.2.4-1ubuntu1.4         │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ dpkg                      │ CVE-2022-1664  │ MEDIUM   │        │ 1.19.0.5ubuntu2.3        │ 1.19.0.5ubuntu2.4        │ Dpkg::Source::Archive in dpkg, the Debian package management │
+│                           │                │          │        │                          │                          │ system, b ...                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1664                    │
+├───────────────────────────┤                │          │        │                          │                          │                                                              │
+│ dpkg-dev                  │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ e2fsprogs                 │ CVE-2022-1304  │          │        │ 1.44.1-1ubuntu1.3        │ 1.44.1-1ubuntu1.4        │ out-of-bounds read/write via crafted filesystem              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1304                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg                     │ CVE-2022-34903 │          │        │ 2.2.4-1ubuntu1.4         │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg-l10n                │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg-utils               │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg2                    │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpg                       │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpg-agent                 │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpg-wks-client            │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpg-wks-server            │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgconf                   │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgsm                     │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gpgv                      │ CVE-2022-34903 │ MEDIUM   │        │                          │ 2.2.4-1ubuntu1.6         │ Signature spoofing via status line injection                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-34903                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-13050 │ LOW      │        │                          │ 2.2.4-1ubuntu1.5         │ GnuPG: interaction between the sks-keyserver code and GnuPG  │
+│                           │                │          │        │                          │                          │ allows for a Certificate...                                  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-13050                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libasn1-8-heimdal         │ CVE-2018-16860 │ MEDIUM   │        │ 7.5.0+dfsg-1             │ 7.5.0+dfsg-1ubuntu0.1    │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libbinutils               │ CVE-2022-38533 │ MEDIUM   │        │ 2.30-21ubuntu1~18.04.7   │ 2.30-21ubuntu1~18.04.8   │ heap-based buffer overflow in bfd_getl32() when called by    │
+│                           │                │          │        │                          │                          │ strip_main() in objcopy.c via...                             │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-38533                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47673 │          │        │                          │ 2.30-21ubuntu1~18.04.9   │ out-of-bounds read in parse_module() in bfd/vms-alpha.c via  │
+│                           │                │          │        │                          │                          │ addr2line                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47673                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-47696 │          │        │                          │                          │ segmentation fault in compare_symbols() in objdump.c         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-47696                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25584 │          │        │                          │                          │ Out of bounds read in parse_module function in               │
+│                           │                │          │        │                          │                          │ bfd/vms-alpha.c                                              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25584                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25585 │          │        │                          │                          │ Field `file_table` of `struct module *module` is             │
+│                           │                │          │        │                          │                          │ uninitialized                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25585                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-25588 │          │        │                          │                          │ Field `the_bfd` of `asymbol` is uninitialized in function    │
+│                           │                │          │        │                          │                          │ `bfd_mach_o_get_synthetic_symtab`                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-25588                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcom-err2               │ CVE-2022-1304  │          │        │ 1.44.1-1ubuntu1.3        │ 1.44.1-1ubuntu1.4        │ out-of-bounds read/write via crafted filesystem              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1304                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libdpkg-perl              │ CVE-2022-1664  │          │        │ 1.19.0.5ubuntu2.3        │ 1.19.0.5ubuntu2.4        │ Dpkg::Source::Archive in dpkg, the Debian package management │
+│                           │                │          │        │                          │                          │ system, b ...                                                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1664                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libext2fs2                │ CVE-2022-1304  │          │        │ 1.44.1-1ubuntu1.3        │ 1.44.1-1ubuntu1.4        │ out-of-bounds read/write via crafted filesystem              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1304                    │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgmp10                  │ CVE-2021-43618 │ LOW      │        │ 2:6.1.2+dfsg-2           │ 2:6.1.2+dfsg-2ubuntu0.1  │ Integer overflow and resultant buffer overflow via crafted   │
+│                           │                │          │        │                          │                          │ input                                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-43618                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgnutls30               │ CVE-2022-2509  │ MEDIUM   │        │ 3.5.18-1ubuntu1.5        │ 3.5.18-1ubuntu1.6        │ Double free during gnutls_pkcs7_verify                       │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-2509                    │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-4209  │ LOW      │        │                          │                          │ Null pointer dereference in MD_UPDATE                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-4209                    │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgssapi3-heimdal        │ CVE-2018-16860 │ MEDIUM   │        │ 7.5.0+dfsg-1             │ 7.5.0+dfsg-1ubuntu0.1    │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libhcrypto4-heimdal       │ CVE-2018-16860 │ MEDIUM   │        │                          │                          │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libheimbase1-heimdal      │ CVE-2018-16860 │ MEDIUM   │        │                          │                          │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libheimntlm0-heimdal      │ CVE-2018-16860 │ MEDIUM   │        │                          │                          │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libhx509-5-heimdal        │ CVE-2018-16860 │ MEDIUM   │        │                          │                          │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libkrb5-26-heimdal        │ CVE-2018-16860 │ MEDIUM   │        │                          │                          │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libldap-2.4-2             │ CVE-2022-29155 │ MEDIUM   │        │ 2.4.45+dfsg-1ubuntu1.10  │ 2.4.45+dfsg-1ubuntu1.11  │ openldap: OpenLDAP SQL injection                             │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29155                   │
+├───────────────────────────┤                │          │        │                          │                          │                                                              │
+│ libldap-common            │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libncurses5               │ CVE-2023-29491 │          │        │ 6.1-1ubuntu1.18.04       │ 6.1-1ubuntu1.18.04.1     │ Local users can trigger security-relevant memory corruption  │
+│                           │                │          │        │                          │                          │ via malformed data                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-29491                   │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17594 │ LOW      │        │                          │                          │ heap-based buffer overflow in the _nc_find_entry function in │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17594                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17595 │          │        │                          │                          │ heap-based buffer overflow in the fmt_entry function in      │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17595                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39537 │          │        │                          │                          │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29458 │          │        │                          │                          │ segfaulting OOB read                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ libncursesw5              │ CVE-2023-29491 │ MEDIUM   │        │                          │                          │ Local users can trigger security-relevant memory corruption  │
+│                           │                │          │        │                          │                          │ via malformed data                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-29491                   │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17594 │ LOW      │        │                          │                          │ heap-based buffer overflow in the _nc_find_entry function in │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17594                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17595 │          │        │                          │                          │ heap-based buffer overflow in the fmt_entry function in      │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17595                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39537 │          │        │                          │                          │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29458 │          │        │                          │                          │ segfaulting OOB read                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpam-modules            │ CVE-2022-28321 │          │        │ 1.1.8-3.6ubuntu2.18.04.3 │ 1.1.8-3.6ubuntu2.18.04.4 │ pam: authentication bypass for SSH logins                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-28321                   │
+├───────────────────────────┤                │          │        │                          │                          │                                                              │
+│ libpam-modules-bin        │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+├───────────────────────────┤                │          │        │                          │                          │                                                              │
+│ libpam-runtime            │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+├───────────────────────────┤                │          │        │                          │                          │                                                              │
+│ libpam0g                  │                │          │        │                          │                          │                                                              │
+│                           │                │          │        │                          │                          │                                                              │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpcre3                  │ CVE-2019-20838 │          │        │ 2:8.39-9                 │ 2:8.39-9ubuntu0.1        │ pcre: Buffer over-read in JIT when UTF is disabled and \X    │
+│                           │                │          │        │                          │                          │ or...                                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-20838                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2020-14155 │          │        │                          │                          │ pcre: Integer overflow when parsing callout numeric          │
+│                           │                │          │        │                          │                          │ arguments                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-14155                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libperl5.26               │ CVE-2020-16156 │ MEDIUM   │        │ 5.26.1-6ubuntu0.5        │ 5.26.1-6ubuntu0.6        │ Bypass of verification of signatures in CHECKSUMS files      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-16156                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-31484 │          │        │                          │ 5.26.1-6ubuntu0.7        │ CPAN.pm before 2.35 does not verify TLS certificates when    │
+│                           │                │          │        │                          │                          │ downloading distributions over...                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-31484                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libroken18-heimdal        │ CVE-2018-16860 │          │        │ 7.5.0+dfsg-1             │ 7.5.0+dfsg-1ubuntu0.1    │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsepol1                 │ CVE-2021-36084 │          │        │ 2.7-1                    │ 2.7-1ubuntu0.1           │ libsepol: use-after-free in __cil_verify_classperms()        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-36084                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-36085 │          │        │                          │                          │ libsepol: use-after-free in __cil_verify_classperms()        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-36085                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-36086 │          │        │                          │                          │ use-after-free in cil_reset_classpermission()                │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-36086                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-36087 │          │        │                          │                          │ libsepol: heap-based buffer overflow in ebitmap_match_any()  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-36087                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsqlite3-0              │ CVE-2020-35525 │ MEDIUM   │        │ 3.22.0-1ubuntu0.4        │ 3.22.0-1ubuntu0.6        │ Null pointer derreference in src/select.c                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-35525                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-35737 │          │        │                          │ 3.22.0-1ubuntu0.7        │ an array-bounds overflow if billions of bytes are used in a  │
+│                           │                │          │        │                          │                          │ string...                                                    │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-35737                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-36690 │ LOW      │        │                          │ 3.22.0-1ubuntu0.5        │ A segmentation fault can occur in the sqlite3.exe            │
+│                           │                │          │        │                          │                          │ command-line compone ...                                     │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-36690                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libss2                    │ CVE-2022-1304  │ MEDIUM   │        │ 1.44.1-1ubuntu1.3        │ 1.44.1-1ubuntu1.4        │ out-of-bounds read/write via crafted filesystem              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-1304                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libsystemd0               │ CVE-2022-2526  │          │        │ 237-3ubuntu10.53         │ 237-3ubuntu10.56         │ systemd-resolved: use-after-free when dealing with DnsStream │
+│                           │                │          │        │                          │                          │ in resolved-dns-stream.c                                     │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-2526                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3821  │          │        │                          │ 237-3ubuntu10.57         │ buffer overrun in format_timespan() function                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3821                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libtinfo5                 │ CVE-2023-29491 │          │        │ 6.1-1ubuntu1.18.04       │ 6.1-1ubuntu1.18.04.1     │ Local users can trigger security-relevant memory corruption  │
+│                           │                │          │        │                          │                          │ via malformed data                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-29491                   │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17594 │ LOW      │        │                          │                          │ heap-based buffer overflow in the _nc_find_entry function in │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17594                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17595 │          │        │                          │                          │ heap-based buffer overflow in the fmt_entry function in      │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17595                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39537 │          │        │                          │                          │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29458 │          │        │                          │                          │ segfaulting OOB read                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libudev1                  │ CVE-2022-2526  │ MEDIUM   │        │ 237-3ubuntu10.53         │ 237-3ubuntu10.56         │ systemd-resolved: use-after-free when dealing with DnsStream │
+│                           │                │          │        │                          │                          │ in resolved-dns-stream.c                                     │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-2526                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3821  │          │        │                          │ 237-3ubuntu10.57         │ buffer overrun in format_timespan() function                 │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3821                    │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libwind0-heimdal          │ CVE-2018-16860 │          │        │ 7.5.0+dfsg-1             │ 7.5.0+dfsg-1ubuntu0.1    │ samba: S4U2Self with unkeyed checksum                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2018-16860                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-44758 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ Heimdal before 7.7.1 allows attackers to cause a NULL        │
+│                           │                │          │        │                          │                          │ pointer derefere ......                                      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-44758                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3116  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ The Heimdal Software Kerberos 5 implementation is vulnerable │
+│                           │                │          │        │                          │                          │ to a null pointer...                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3116                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-3437  │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ samba: heap buffer overflow in GSSAPI unwrap_des() and       │
+│                           │                │          │        │                          │                          │ unwrap_des3() routines of Heimdal...                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-3437                    │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-41916 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.2    │ Heimdal is an implementation of ASN.1/DER, PKIX, and         │
+│                           │                │          │        │                          │                          │ Kerberos. Version ...                                        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-41916                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-42898 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.3    │ integer overflow vulnerabilities in PAC parsing              │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-42898                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-44640 │          │        │                          │                          │ Heimdal before 7.7.1 allows remote attackers to execute      │
+│                           │                │          │        │                          │                          │ arbitrary code ...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-44640                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-45142 │          │        │                          │ 7.5.0+dfsg-1ubuntu0.4    │ samba: CVE-2022-3437 fix introduced a logic inversion        │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-45142                   │
+│                           ├────────────────┼──────────┤        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-12098 │ LOW      │        │                          │ 7.5.0+dfsg-1ubuntu0.1    │ In the client side of Heimdal before 7.6.0, failure to       │
+│                           │                │          │        │                          │                          │ verify anonymou...                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-12098                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-3671  │          │        │                          │                          │ samba: Null pointer dereference on missing sname in TGS-REQ  │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-3671                    │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ncurses-base              │ CVE-2023-29491 │ MEDIUM   │        │ 6.1-1ubuntu1.18.04       │ 6.1-1ubuntu1.18.04.1     │ Local users can trigger security-relevant memory corruption  │
+│                           │                │          │        │                          │                          │ via malformed data                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-29491                   │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17594 │ LOW      │        │                          │                          │ heap-based buffer overflow in the _nc_find_entry function in │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17594                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17595 │          │        │                          │                          │ heap-based buffer overflow in the fmt_entry function in      │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17595                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39537 │          │        │                          │                          │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29458 │          │        │                          │                          │ segfaulting OOB read                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────────┼────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│ ncurses-bin               │ CVE-2023-29491 │ MEDIUM   │        │                          │                          │ Local users can trigger security-relevant memory corruption  │
+│                           │                │          │        │                          │                          │ via malformed data                                           │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-29491                   │
+│                           ├────────────────┼──────────┤        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17594 │ LOW      │        │                          │                          │ heap-based buffer overflow in the _nc_find_entry function in │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17594                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2019-17595 │          │        │                          │                          │ heap-based buffer overflow in the fmt_entry function in      │
+│                           │                │          │        │                          │                          │ tinfo/comp_hash.c                                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2019-17595                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2021-39537 │          │        │                          │                          │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
+│                           ├────────────────┤          │        │                          │                          ├──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2022-29458 │          │        │                          │                          │ segfaulting OOB read                                         │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
+├───────────────────────────┼────────────────┼──────────┤        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ perl                      │ CVE-2020-16156 │ MEDIUM   │        │ 5.26.1-6ubuntu0.5        │ 5.26.1-6ubuntu0.6        │ Bypass of verification of signatures in CHECKSUMS files      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-16156                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-31484 │          │        │                          │ 5.26.1-6ubuntu0.7        │ CPAN.pm before 2.35 does not verify TLS certificates when    │
+│                           │                │          │        │                          │                          │ downloading distributions over...                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-31484                   │
+├───────────────────────────┼────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ perl-base                 │ CVE-2020-16156 │          │        │                          │ 5.26.1-6ubuntu0.6        │ Bypass of verification of signatures in CHECKSUMS files      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-16156                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-31484 │          │        │                          │ 5.26.1-6ubuntu0.7        │ CPAN.pm before 2.35 does not verify TLS certificates when    │
+│                           │                │          │        │                          │                          │ downloading distributions over...                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-31484                   │
+├───────────────────────────┼────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ perl-modules-5.26         │ CVE-2020-16156 │          │        │                          │ 5.26.1-6ubuntu0.6        │ Bypass of verification of signatures in CHECKSUMS files      │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2020-16156                   │
+│                           ├────────────────┤          │        │                          ├──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                           │ CVE-2023-31484 │          │        │                          │ 5.26.1-6ubuntu0.7        │ CPAN.pm before 2.35 does not verify TLS certificates when    │
+│                           │                │          │        │                          │                          │ downloading distributions over...                            │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2023-31484                   │
+├───────────────────────────┼────────────────┤          │        ├──────────────────────────┼──────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ tar                       │ CVE-2022-48303 │          │        │ 1.29b-2ubuntu0.3         │ 1.29b-2ubuntu0.4         │ heap buffer overflow at from_header() in list.c via          │
+│                           │                │          │        │                          │                          │ specially crafted checksum                                   │
+│                           │                │          │        │                          │                          │ https://avd.aquasec.com/nvd/cve-2022-48303                   │
+└───────────────────────────┴────────────────┴──────────┴────────┴──────────────────────────┴──────────────────────────┴──────────────────────────────────────────────────────────────┘
