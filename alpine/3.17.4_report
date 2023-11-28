@@ -1,0 +1,36 @@
+
+alpine:3.17.4 (alpine 3.17.4)
+=============================
+Total: 8 (LOW: 0, MEDIUM: 6, HIGH: 2, CRITICAL: 0)
+
+┌────────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
+│  Library   │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                            │
+├────────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libcrypto3 │ CVE-2023-5363 │ HIGH     │ fixed  │ 3.0.9-r1          │ 3.0.12-r0     │ openssl: Incorrect cipher key and IV length processing      │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363                   │
+│            ├───────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-2975 │ MEDIUM   │        │                   │ 3.0.9-r2      │ openssl: AES-SIV cipher implementation contains a bug that  │
+│            │               │          │        │                   │               │ causes it to ignore...                                      │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-2975                   │
+│            ├───────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-3446 │          │        │                   │ 3.0.9-r3      │ openssl: Excessive time spent checking DH keys and          │
+│            │               │          │        │                   │               │ parameters                                                  │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3446                   │
+│            ├───────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-3817 │          │        │                   │ 3.0.10-r0     │ OpenSSL: Excessive time spent checking DH q parameter value │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3817                   │
+├────────────┼───────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ libssl3    │ CVE-2023-5363 │ HIGH     │        │                   │ 3.0.12-r0     │ openssl: Incorrect cipher key and IV length processing      │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363                   │
+│            ├───────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-2975 │ MEDIUM   │        │                   │ 3.0.9-r2      │ openssl: AES-SIV cipher implementation contains a bug that  │
+│            │               │          │        │                   │               │ causes it to ignore...                                      │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-2975                   │
+│            ├───────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-3446 │          │        │                   │ 3.0.9-r3      │ openssl: Excessive time spent checking DH keys and          │
+│            │               │          │        │                   │               │ parameters                                                  │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3446                   │
+│            ├───────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│            │ CVE-2023-3817 │          │        │                   │ 3.0.10-r0     │ OpenSSL: Excessive time spent checking DH q parameter value │
+│            │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3817                   │
+└────────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘
