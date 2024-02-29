@@ -1,0 +1,78 @@
+
+alpine:3.18.2 (alpine 3.18.2)
+=============================
+Total: 19 (LOW: 0, MEDIUM: 14, HIGH: 2, CRITICAL: 3)
+
+┌───────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
+│    Library    │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                            │
+├───────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ busybox       │ CVE-2022-48174 │ CRITICAL │ fixed  │ 1.36.1-r0         │ 1.36.1-r1     │ stack overflow vulnerability in ash.c leads to arbitrary    │
+│               │                │          │        │                   │               │ code execution                                              │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2022-48174                  │
+├───────────────┤                │          │        │                   │               │                                                             │
+│ busybox-binsh │                │          │        │                   │               │                                                             │
+│               │                │          │        │                   │               │                                                             │
+│               │                │          │        │                   │               │                                                             │
+├───────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ libcrypto3    │ CVE-2023-5363  │ HIGH     │        │ 3.1.1-r1          │ 3.1.4-r0      │ openssl: Incorrect cipher key and IV length processing      │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363                   │
+│               ├────────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-2975  │ MEDIUM   │        │                   │ 3.1.1-r2      │ openssl: AES-SIV cipher implementation contains a bug that  │
+│               │                │          │        │                   │               │ causes it to ignore...                                      │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-2975                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-3446  │          │        │                   │ 3.1.1-r3      │ openssl: Excessive time spent checking DH keys and          │
+│               │                │          │        │                   │               │ parameters                                                  │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3446                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-3817  │          │        │                   │ 3.1.2-r0      │ OpenSSL: Excessive time spent checking DH q parameter value │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3817                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-5678  │          │        │                   │ 3.1.4-r1      │ openssl: Generating excessively long X9.42 DH keys or       │
+│               │                │          │        │                   │               │ checking excessively long X9.42...                          │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5678                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-6129  │          │        │                   │ 3.1.4-r3      │ openssl: POLY1305 MAC implementation corrupts vector        │
+│               │                │          │        │                   │               │ registers on PowerPC                                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-6129                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-6237  │          │        │                   │ 3.1.4-r4      │ openssl: Excessive time spent checking invalid RSA public   │
+│               │                │          │        │                   │               │ keys                                                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-6237                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2024-0727  │          │        │                   │ 3.1.4-r5      │ openssl: denial of service via null dereference             │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-0727                   │
+├───────────────┼────────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ libssl3       │ CVE-2023-5363  │ HIGH     │        │                   │ 3.1.4-r0      │ openssl: Incorrect cipher key and IV length processing      │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5363                   │
+│               ├────────────────┼──────────┤        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-2975  │ MEDIUM   │        │                   │ 3.1.1-r2      │ openssl: AES-SIV cipher implementation contains a bug that  │
+│               │                │          │        │                   │               │ causes it to ignore...                                      │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-2975                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-3446  │          │        │                   │ 3.1.1-r3      │ openssl: Excessive time spent checking DH keys and          │
+│               │                │          │        │                   │               │ parameters                                                  │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3446                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-3817  │          │        │                   │ 3.1.2-r0      │ OpenSSL: Excessive time spent checking DH q parameter value │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-3817                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-5678  │          │        │                   │ 3.1.4-r1      │ openssl: Generating excessively long X9.42 DH keys or       │
+│               │                │          │        │                   │               │ checking excessively long X9.42...                          │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-5678                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-6129  │          │        │                   │ 3.1.4-r3      │ openssl: POLY1305 MAC implementation corrupts vector        │
+│               │                │          │        │                   │               │ registers on PowerPC                                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-6129                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2023-6237  │          │        │                   │ 3.1.4-r4      │ openssl: Excessive time spent checking invalid RSA public   │
+│               │                │          │        │                   │               │ keys                                                        │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2023-6237                   │
+│               ├────────────────┤          │        │                   ├───────────────┼─────────────────────────────────────────────────────────────┤
+│               │ CVE-2024-0727  │          │        │                   │ 3.1.4-r5      │ openssl: denial of service via null dereference             │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-0727                   │
+├───────────────┼────────────────┼──────────┤        ├───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ ssl_client    │ CVE-2022-48174 │ CRITICAL │        │ 1.36.1-r0         │ 1.36.1-r1     │ stack overflow vulnerability in ash.c leads to arbitrary    │
+│               │                │          │        │                   │               │ code execution                                              │
+│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2022-48174                  │
+└───────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘
